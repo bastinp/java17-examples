@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from Git repository
-                git 'https://github.com/neiljbrown/java17-examples.git'
+                sh 'git clone https://github.com/neiljbrown/java17-examples.git'
+                sh 'cd java17-examples'
             }
         }
         stage('Test') {
