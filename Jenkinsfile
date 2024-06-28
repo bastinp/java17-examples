@@ -2,7 +2,7 @@ pipeline {
     agent any  // Runs the pipeline on any available agent (node)
 
     stages {
-        stage('Checkout') {
+        stage('Clone') {
             steps {
                 // Checkout code from Git repository
                 sh 'git clone https://github.com/neiljbrown/java17-examples.git'
